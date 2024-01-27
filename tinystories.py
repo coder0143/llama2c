@@ -61,12 +61,12 @@ def download():
         print(f"{data_dir} already exists, skipping unpacking...")
 
     # print a single example just for debugging and such
-    shard_filenames = sorted(glob.glob(os.path.join(data_dir, "*.json")))
-    with open(shard_filenames[0], "r") as f:
-        data = json.load(f)
-    print("Download done.")
-    print(f"Number of shards: {len(shard_filenames)}")
-    print(f"Example story:\n{data[0]}")
+    # shard_filenames = sorted(glob.glob(os.path.join(data_dir, "*.json")))
+    # with open(shard_filenames[0], "r") as f:
+    #     data = json.load(f)
+    # print("Download done.")
+    # print(f"Number of shards: {len(shard_filenames)}")
+    # print(f"Example story:\n{data[0]}")
 
 def train_vocab(vocab_size):
     """
